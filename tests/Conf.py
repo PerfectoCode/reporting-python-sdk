@@ -11,6 +11,7 @@ class TestConf(unittest.TestCase):
         self.user = os.environ['USEWRNAME']
         self.password = os.environ['PASSWORD']
         self.host = os.environ['LAB']
+        self.offlinetoken = os.environ['offlinetoken']
         self.driver = None
         self.reporting_client = None
 
@@ -20,7 +21,7 @@ class TestConf(unittest.TestCase):
         capabilities = {
             'platformName': 'Android',
             'deviceName': '',
-            'securityToken':''
+            'securityToken': self.offlinetoken
         }
         self.driver = webdriver.Remote('https://' + self.host + '/nexperience/perfectomobile/wd/hub', capabilities)
         self.create_reporting_client()
