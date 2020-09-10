@@ -8,8 +8,7 @@ from perfecto import *
 
 class TestConf(unittest.TestCase):
     def __init__(self, *args, **kwargs):
-        self.user = os.environ['USEWRNAME']
-        self.password = os.environ['PASSWORD']
+        self.securityToken=os.envrion['offlineToken']
         self.host = os.environ['LAB']
         self.driver = None
         self.reporting_client = None
@@ -20,8 +19,7 @@ class TestConf(unittest.TestCase):
         capabilities = {
             'platformName': 'Android',
             'deviceName': '',
-            'user': self.user,
-            'password': self.password
+            'securityToken' : self.securityToken
         }
         self.driver = webdriver.Remote('https://' + self.host + '/nexperience/perfectomobile/wd/hub', capabilities)
         self.create_reporting_client()
