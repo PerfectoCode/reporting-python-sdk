@@ -18,7 +18,7 @@ class TestConf(unittest.TestCase):
     def setUp(self):
         capabilities = {
             'platformName': 'Android',
-            'deviceName': '',
+            'model': 'Galaxy S9',
             'securityToken' : self.securityToken
         }
         self.driver = webdriver.Remote('https://' + self.host + '/nexperience/perfectomobile/wd/hub', capabilities)
