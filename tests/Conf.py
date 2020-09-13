@@ -21,6 +21,7 @@ class TestConf(unittest.TestCase):
             'model': 'Galaxy S9',
             'securityToken' : self.securityToken
         }
+        print ('capabilities:' + capabilities);
         self.driver = webdriver.Remote('https://' + self.host + '/nexperience/perfectomobile/wd/hub', capabilities)
         self.create_reporting_client()
         self.reporting_client.test_start(self.id(), TestContext('daniela@perfectomobile.com', 'Python', 'unittest'))
