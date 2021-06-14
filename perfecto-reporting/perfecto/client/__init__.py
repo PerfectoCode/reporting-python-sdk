@@ -1,3 +1,3 @@
-from constants import *
-from PerfectoReportiumClient import PerfectoReportiumClient
-from PerfectoDeprecator import deprecated
+from .constants import *
+from .PerfectoReportiumClient import PerfectoReportiumClient
+from .PerfectoDeprecator import deprecated

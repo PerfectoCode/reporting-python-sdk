@@ -1,4 +1,4 @@
-from TestResult import TestResultSuccess, TestResultFailure
+from .TestResult import TestResultSuccess, TestResultFailure
 
 
 class TestResultFactory:

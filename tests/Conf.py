@@ -21,7 +21,7 @@ class TestConf(unittest.TestCase):
             'model': 'Galaxy S9',
             'securityToken' : self.securityToken
         }
-        print ('capabilities:' + capabilities);
+        print(('capabilities:' + capabilities));
         self.driver = webdriver.Remote('https://' + self.host + '/nexperience/perfectomobile/wd/hub', capabilities)
         self.create_reporting_client()
         self.reporting_client.test_start(self.id(), TestContext('daniela@perfectomobile.com', 'Python', 'unittest'))
@@ -40,10 +40,10 @@ class TestConf(unittest.TestCase):
                 self.reporting_client.test_stop(TestResultFactory.create_failure(self.currentResult.errors,
                                                                                  self.currentResult.failures))
             # Print report's url
-            print 'Report-Url: ' + self.reporting_client.report_url() + '\n'
+            print('Report-Url: ' + self.reporting_client.report_url() + '\n')
 
         except Exception as e:
-            print e.message
+            print(e.message)
 
         self.driver.quit()
 

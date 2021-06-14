@@ -8,8 +8,8 @@ class PerfectoExecutionContext:
         clean_tags = []
         if tags is not None:
             for tag in tags:
-                if not isinstance(tag, basestring):
-                    print 'Warnning: perfecto tags must be strings, please change your tag:' + str(tag)
+                if not isinstance(tag, str):
+                    print('Warnning: perfecto tags must be strings, please change your tag:' + str(tag))
                 else:
                     clean_tags.append(tag)
         self.context_tags = clean_tags
