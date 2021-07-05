@@ -43,7 +43,7 @@ class TestConf(unittest.TestCase):
             print('Report-Url: ' + self.reporting_client.report_url() + '\n')
 
         except Exception as e:
-            print(e.message)
+            print(str(e))
 
         self.driver.quit()
 

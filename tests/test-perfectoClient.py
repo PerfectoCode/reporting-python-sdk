@@ -27,7 +27,7 @@ class ReportingTests(TestConf):
                 print("trying test failed " + str(e))
                 print(str(e))
                 print(e.__doc__)
-                print(e.message)
+                print(e.args)
                 print(traceback.format_exc())
 
 
