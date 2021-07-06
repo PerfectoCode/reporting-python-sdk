@@ -1,3 +1,3 @@
-from client import *
-from model import *
-from test import *
+from .client import *
+from .model import *
+from .test import *

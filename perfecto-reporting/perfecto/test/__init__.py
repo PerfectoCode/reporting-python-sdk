@@ -1,2 +1,2 @@
-from TestContext import TestContext
-from TestResultFactory import TestResultFactory
+from .TestContext import TestContext
+from .TestResultFactory import TestResultFactory

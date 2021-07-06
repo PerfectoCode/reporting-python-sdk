@@ -1,2 +1,2 @@
-from ReportingException import ReportingException
+from .ReportingException import ReportingException
 

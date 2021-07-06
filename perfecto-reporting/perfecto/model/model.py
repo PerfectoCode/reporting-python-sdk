@@ -10,9 +10,9 @@ class Job:
         self.number = number
         self.branch = branch
 
-	
+
 class CustomField:
     def __init__(self, key, value):
         self.dict = {key: value}
         self.value = value
-	self.key = key
+        self.key = key

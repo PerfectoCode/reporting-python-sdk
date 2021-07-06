@@ -1,2 +1,2 @@
-from model import *
-from PerfectoExecutionContext import PerfectoExecutionContext
+from .model import *
+from .PerfectoExecutionContext import PerfectoExecutionContext

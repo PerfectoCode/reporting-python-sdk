@@ -44,10 +44,10 @@ def tearDown(self):
         else:
             self.reporting_client.test_stop(TestResultFactory.create_failure(self.currentResult.errors,
                                                                              self.currentResult.failures))
-        # Print report's url
-        print 'Report-Url: ' + self.reporting_client.report_url() + '\n'
+        # Print(report's url)
+        print('Report-Url: ' + self.reporting_client.report_url() + '\n')
     except Exception as e:
-        print e.message
+        print(str(e)
 
     self.driver.quit()
 ```

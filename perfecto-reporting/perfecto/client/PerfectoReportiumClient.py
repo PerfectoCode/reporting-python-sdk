@@ -1,5 +1,5 @@
-from constants import *
-from PerfectoDeprecator import deprecated
+from .constants import *
+from .PerfectoDeprecator import deprecated
 
 
 class PerfectoReportiumClient:
@@ -54,7 +54,7 @@ class PerfectoReportiumClient:
         where each Custom Field is in the form <key>=<value>
         """
         str_cFields = []
-        for key, val in cFields.items():
+        for key, val in list(cFields.items()):
             cFieldS = key + '=' + val 
             str_cFields.append(cFieldS)
 
@@ -118,7 +118,7 @@ class PerfectoReportiumClient:
                 where each Custom Field is in the form <key>=<value>
                 """
                 str_cFields = []
-                for key, val in cFields.items():
+                for key, val in list(cFields.items()):
                     cFieldS = key + '=' + val
                     str_cFields.append(cFieldS)
 
